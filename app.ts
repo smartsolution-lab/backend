@@ -12,7 +12,7 @@ import fs from 'fs';
 import chatApp from "./utils/chat";
 
 const app = express()
-const PORT = process.env.PORT || 443;
+const PORT = process.env.PORT || 5900;
 
 // middleware
 app.use(compression());
