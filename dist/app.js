@@ -16,7 +16,7 @@ const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const fs_1 = __importDefault(require("fs"));
 const chat_1 = __importDefault(require("./utils/chat"));
 const app = (0, express_1.default)();
-const PORT = process.env.PORT || 5900;
+const PORT = process.env.PORT || 443;
 // middleware
 app.use((0, compression_1.default)());
 app.use((0, helmet_1.default)());

@@ -22,3 +22,5 @@ AWS bucket name : femmetaxi
 
 AWS region : Europe (Stockholm) eu-north-1
 
+
+
