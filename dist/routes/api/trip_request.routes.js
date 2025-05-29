@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const auth_1 = require("../../auth");
+const trip_request_controller_1 = require("../../controllers/trip_request.controller");
+const tripRequestRoutes = (0, express_1.Router)();
+tripRequestRoutes.post('/', (0, auth_1.userAuth)({ isAuth: true }), trip_request_controller_1.tripRequest);
+tripRequestRoutes.post('/update-by-user', (0, auth_1.userAuth)({ isAuth: true }), trip_request_controller_1.tripRequestUpdateByUser);
+tripRequestRoutes.post('/update-by-driver', (0, auth_1.userAuth)({ isAuth: true }), trip_request_controller_1.tripRequestUpdateByDriver);
+tripRequestRoutes.post('/cancel', (0, auth_1.userAuth)({ isAuth: true }), trip_request_controller_1.tripRequestCancel);
+tripRequestRoutes.get('/list', (0, auth_1.userAuth)({ isAuth: true }), trip_request_controller_1.getTripRequestList);
+tripRequestRoutes.get('/ongoing', (0, auth_1.userAuth)({ isAuth: true }), trip_request_controller_1.getOngoingTrip);
+tripRequestRoutes.get('/list-user', (0, auth_1.userAuth)({ isUser: true }), trip_request_controller_1.getTripRequestList);
+tripRequestRoutes.get('/list-driver', (0, auth_1.userAuth)({ isDriver: true }), trip_request_controller_1.getTripRequestList);
+tripRequestRoutes.get('/', (0, auth_1.userAuth)({ isAuth: true }), trip_request_controller_1.getTripRequestByTripRequestId);
+tripRequestRoutes.get('/user-socket-response', trip_request_controller_1.tripDataFetchByUserSocketResponse);
+tripRequestRoutes.get('/driver-socket-response', trip_request_controller_1.tripDataFetchByDriverSocketResponse);
+tripRequestRoutes.delete('/', (0, auth_1.userAuth)({ isAdmin: true }), auth_1.isDemoRequest, trip_request_controller_1.delTripRequest);
+exports.default = tripRequestRoutes;
+//# sourceMappingURL=trip_request.routes.js.map

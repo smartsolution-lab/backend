@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "lib": ["esnext"],               // ✅ مهم: لا تضف "dom"
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "skipLibCheck": true             // ✅ تجاوز فحص تعارض الأنواع
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts"]
+}

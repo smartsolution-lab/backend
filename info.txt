@@ -1,0 +1,19 @@
+============================= Gmail  , MongoDb Atlas ==================================
+
+Gmail : hdsmartsolution@gmail.com
+Pass : Saham1234@
+
+================================= Db Details ========================================
+
+DB : mongodb+srv://Femmetaxi:VBZooF8wghUuHgJiqR56pjrVLVBmJqtU5SzlhuCXCxWZeSekbvac4bIxzYbTyBTemmWrr7Ra1xXAFHq73Y7WcmPGc6QQdKEqIl8AD95lBwsb53aiXSWWfoLWR30QaUcwBfyhKyIHMQaJOTL6ylOC2WKlhhELcV3RZo25qWq5CzoE9p8Uo1SPlhApxuQ74fsCTVf7rdyqBtzqqR1wbc9PQ6VK4wsl7Dw@cluster0.sjqohng.mongodb.net/Femmetaxi_db?retryWrites=true&w=majority&appName=Cluster0
+
+================================= AWS Details ======================================
+
+Access key : AKIA5J6WPVNMXTUO4JO4
+
+Secret access key : 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
+
+AWS bucket name : femmetaxi
+
+AWS region : Europe (Stockholm) eu-north-1
+

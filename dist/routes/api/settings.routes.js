@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const settings_controller_1 = require("../../controllers/settings.controller");
+const auth_1 = require("../../auth");
+const settingsRoutes = (0, express_1.Router)();
+settingsRoutes.get('/', (0, auth_1.userAuth)({ isAuth: true }), settings_controller_1.getSettings);
+settingsRoutes.post('/', (0, auth_1.userAuth)({ isAdmin: true }), auth_1.isDemoRequest, settings_controller_1.updateSettings);
+settingsRoutes.get('/site', settings_controller_1.getSiteSettings);
+settingsRoutes.get('/payment', settings_controller_1.getPaymentsSettings);
+settingsRoutes.get('/payment-gateways', settings_controller_1.getPaymentsGateways);
+settingsRoutes.get('/languages', settings_controller_1.getLanguages);
+settingsRoutes.get('/all-languages', settings_controller_1.getAllLanguages);
+settingsRoutes.post('/language', settings_controller_1.postLanguage);
+settingsRoutes.delete('/language', (0, auth_1.userAuth)({ isAdmin: true }), auth_1.isDemoRequest, settings_controller_1.delLanguage);
+settingsRoutes.post('/cancellation-reason', (0, auth_1.userAuth)({ isAdmin: true }), settings_controller_1.postLanguage);
+settingsRoutes.get('/language/translations', settings_controller_1.getLanguageTranslations);
+settingsRoutes.post('/language/translations', (0, auth_1.userAuth)({ isAdmin: true }), settings_controller_1.postLanguageTranslations);
+exports.default = settingsRoutes;
+//# sourceMappingURL=settings.routes.js.map

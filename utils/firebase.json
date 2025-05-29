@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "femmetaxi-82d11",
+  "private_key_id": "4834bfdd41a7cc8e88b6caf05b2ae44204ce76ea",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCwmNx9K9JgpPpO\nO/zrStbKkWNNWmDFzrBE+thdGCfZOCOGzJpxSVgKanpEUR2Um9DsTBWxnWzPqOeT\nrSlpQ5GL1F1luCXGJmDHYvKtVcAx1Kk2qRxEPoVQAQsJRZai20lGbL+Gm+D4S5sP\nJ3tiDMT5ibOCBX/fsmrQlp4+1ze7S93XqupgmLqARdR1Z5zGf85jZT7h4Uo7Erpv\n3Rwih/2iX36lgNeT3QGS7vx/T+c2rv5Znkee94chjJen9J2OWuNK6+1J3ku6GwYn\n8qWbejLdctHxut7GsuPgfwE+OvHFeErKkARyKb+kbqlFxM9P9OQDZ/c3jC7ArnGI\nONe2KwKFAgMBAAECggEAC2iIn+53jAZEZE70RxgB2bq8NUhQJZ81XHNvDE6N7na1\nttTbalOgZCXeSbEKzeml/MnqgdunZp/k+/GNEg+LJMMemH5ltFAQ4viVsFRwkteH\n6e/RU2hNkO5MUfhEo7cyW+IVGmNSDIBH31n/2sTz6aH3boAf82nRhDGivfEF2OvR\neQTRagtOSlR2TF5nvuj38hhVaPddRjdbmpli7sDaHG07H0ucDbyUXMFyi+2iZoZK\n5sfubP4gelzu6M8TOTjHGGMNnqQs3ObJd5VsH24GdhdZF3MUJLYhB5FgxLgzrtBw\nq5F2lU5LGNRehAX8TrPBtOaxM3Vguo/SfYHG/ltR8QKBgQDkm5K2jz4/3vDdxZgi\ne6erLz8dQNpM0myfI4jo/hy/nM+z9eb4XBRKu5XwSwVVKo6XEKRul6RYCwu8Uc+1\nmbDXwgwmNqcNp47N21Wlo2g9w8pQ4Q2ihCAR0AoC2BjmG3OEeYZbLLhTXn3Q+Vop\n9KwhZGifoCoLp1fzpZO6jQg2dQKBgQDFweOpPKcs98ig1aZxu37aM6IaO+VHxxbq\n8VPR51h9oXgOQXKEc67jmKuzw7EWL/D40s3oB2W3/BHapECwP4WMqn/oWaBVPdkJ\nEVFEqvtGIiZx3rx3or5+NzD+dBpAVFhmmPwbiWJ2nuOY1I6LAxcINV5b67L4L8Cy\nrtL6Syy50QKBgQChKM+H5XmT213gaeDzRksQUhFjVQnQKHOsyIdHAYVQy4JdMphu\nM7OWb6GnMawDuymkc3YIBN01uCvAycftFPjnUYPxGIwyAxKYKuy5BXaCPFmPJOjQ\nzeYxyICWOrNq3KVWGbnO4rrbAv0dafvXIgaKz9c12NprNsC5IdwAIlZM1QKBgGKo\nKuKILsKhTwbl72Z36n4DGlDKJsVbTlShVna2WpA6WMGL5wyrBcnnpWlGLHdsLWSF\nDlI+NoHGEEYqgVcsKX0Wpj8NT46XD0qVyBxgzICdkt5mB1IL78rZz+hxlZMYQQ3W\nLpeyP1v8QoFBMWeqf/gJX+yttphYgmLiEsDpdgOxAoGBAM74io0C1o0S2cVGiA0x\nuYN9t14tJsG6lz6C0MM678caC6HGUwnDJILRHzTxqHOXnl5GjIAtpnDOWe39N/Fc\niNeFpU+UtpSkD0ORdoGSdqNyeU4Sjk7fPvMLxVoXi2kCMo6AKFmdfTfq5yK0srVe\nebPd4YGUjNYVIFg9Pj7h4/hF\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@femmetaxi-82d11.iam.gserviceaccount.com",
+  "client_id": "112296186390906428945",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40femmetaxi-82d11.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

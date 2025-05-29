@@ -1,0 +1,24 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const auth_1 = require("../../auth");
+const payment_controller_1 = require("../../controllers/payment.controller");
+const paymentRoutes = (0, express_1.Router)();
+paymentRoutes.post('/wallet', (0, auth_1.userAuth)({ isUser: true }), payment_controller_1.walletPayment);
+paymentRoutes.post('/stripe', (0, auth_1.userAuth)({ isUser: true }), payment_controller_1.stripePayment);
+paymentRoutes.post('/paypal', (0, auth_1.userAuth)({ isUser: true }), payment_controller_1.paypalPayment);
+paymentRoutes.post('/mollie-payment', (0, auth_1.userAuth)({ isUser: true }), payment_controller_1.molliePaymentGetaway);
+paymentRoutes.get('/webhook', payment_controller_1.molliePaymentCheck);
+paymentRoutes.post('/razorpay', (0, auth_1.userAuth)({ isUser: true }), payment_controller_1.razorPayPayment);
+paymentRoutes.post('/razorpay-verify', (0, auth_1.userAuth)({ isUser: true }), payment_controller_1.razorPayVerification);
+paymentRoutes.post('/flutterwave', (0, auth_1.userAuth)({ isUser: true }), payment_controller_1.flutterWavePayment);
+paymentRoutes.get('/list', (0, auth_1.userAuth)({ isAdmin: true }), payment_controller_1.getPaymentList);
+paymentRoutes.get('/list-user', (0, auth_1.userAuth)({ isUser: true }), payment_controller_1.getPaymentList);
+paymentRoutes.get('/list-driver', (0, auth_1.userAuth)({ isDriver: true }), payment_controller_1.getPaymentList);
+paymentRoutes.get('/', payment_controller_1.getPayment);
+paymentRoutes.delete('/', (0, auth_1.userAuth)({ isAdmin: true }), auth_1.isDemoRequest, payment_controller_1.delPayment);
+paymentRoutes.get('/check', payment_controller_1.checkPayment);
+paymentRoutes.get('/driver-balance-list', (0, auth_1.userAuth)({ isAuth: true }), payment_controller_1.driverBalanceList);
+paymentRoutes.delete('/driver-balance', (0, auth_1.userAuth)({ isAdmin: true }), auth_1.isDemoRequest, payment_controller_1.deleteDriverBalance);
+exports.default = paymentRoutes;
+//# sourceMappingURL=payment.routes.js.map
