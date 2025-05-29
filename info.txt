@@ -1,4 +1,9 @@
-============================= Gmail  , MongoDb Atlas ==================================
+================================== AWS Account =========================================
+
+Email : remichi.hileleddine@gmail.com
+passs : Saham1234@
+
+============================= Gmail  , MongoDb Atlas , firbase ==================================
 
 Gmail : hdsmartsolution@gmail.com
 Pass : Saham1234@
